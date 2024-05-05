@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+    font-family: "Sawarabi Gothic"; 
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+  
+  header{
+    height:100px;
+    background-color:darkcyan;
+  }
+
+  .logo{
+    height:40px;
+    width:30px;
+    margin:20px; 
+    position:relative;
+    top:8px;
+  }
+
+  .title{
+    font-size:20px;
+    color:azure;
+    position:absolute;
+    top:30px;
+    left:100px;
+    z-index:10;
+  }
+
+  body {
+    margin: 0;
+    background-color: #f6faff;
+    color: #6c7686;
+  }
+
+  main{
+    margin: 10px 20px;
+  }
+
+  .button{
+    position:relative;
+    top:15px;
+    right:8px;
+    margin:30px;
+    padding:8px;
+    width:60px;
+    font-size:90%;
+    text-decoration: none;
+    color: #f6faff;
+    background-color: rgb(16, 173, 173);
+    border-radius:5px ;
+    text-align: center;
+  }
+
+  /*  top.ejs ============================ */
+  main a{
+    display:block;
+  }
+
+  .new-button{
+    position:relative;
+    top:15px;
+    right:8px;
+    width:80%;
+    margin:30px;
+    padding:8px;
+    font-size:90%;
+    text-decoration: none;
+    color: #54585e;
+    background-color: rgb(187, 236, 236);
+    border-radius:30px ;
+    text-align: center;
+  }
+
+
+  /*  history.ejs ============================ */
+  .list{
+    background-color: white;
+    height:500px;
+    width:80%;
+    padding:20px;
+  }
+
+  .list-head{
+    background-color: rgb(168, 207, 207);
+  }
+  
+  .date-column{
+    width:50px
+  }
+
+  .bodyweight-column{
+    width:50px
+  }
+
+  .bodyfatpar-column{
+    width:50px
+  }
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid #adadad;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+ tr:nth-child(even) {
+  background-color: #f2f2f2ab;
+}
+
+/*  new.ejs ============================ */
+.container-header{
+  font-size:10px;
+}

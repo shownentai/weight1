@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ヘルスケア</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/images/fire-flame-curved-solid.svg" >
+      <div class="title">ヘルスケアAPP</div>
+    </header>
+    <main>
+      <div class="main">
+        これまでの履歴です。
+        </div>
+       <!-- weight定数で体重を定義。実際はリスト形式にする  --> 
+        <div class="list">
+        <table class="list-wrapper">
+        <tr class="list-head">
+         <th class="date-column">日付</th>
+          <th class="bodyweight-column">体重</th>
+          <th class="bodyfatpar-column">体脂肪率</th>
+        </tr>
+      
+
+          <% weights.forEach(function(weight) { %>
+            <tr class="list-body">
+                <th class="date-column"><%= new Date(weight.date).toLocaleDateString('ja-JP') %></th>
+               <th class="bodyweight-column"><%= weight.bodyweight %></th>
+                <th class="bodyfatpar-column"><%= weight.bodyfatpar %></th>
+              </tr>
+           <% }) %>
+      
+        </table>
+      </div>
+      <a href="/" class ="button">TOP</a>
+    </main>
+  </body>
+</html>
